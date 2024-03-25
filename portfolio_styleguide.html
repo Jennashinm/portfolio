@@ -7,6 +7,9 @@
     <title>Style Guide Template For Portfoilo</title>
 
     <link href="css/styleguide.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
   </head>
 
@@ -14,26 +17,93 @@
 
     <h1>Style Guide Template</h1>
 
-    <p>A template you can use to start building out your own style guides with.</p>
+    <p>A template for the portfolio</p>
 
 
     <nav>
 
       <p>
         Go to:
-        <a href="#interactive_elements">Interactive Elements</a>,
-        <a href="#text_elements">Text Elements</a>,
-        <a href="#combined_elements">Combined Elements</a>,
+        <a href ="#ethos_elements">Ethos</a>
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="#image_elements">Image Elements</a>
+        <a href="#citation_elements">Citations</a>
       </p>
 
+
     </nav>
+
+
+
+    <!-- ETHOS ELEMENT SECTION // -->
+    <section id="interactive_elements">
+
+      <section>
+
+        <h2>Ethos</h2>
+
+        <h3>Position</h3>
+        <p>Developing UI/UX student seeking to be a future designer</p>
+
+
+        <h3>Biography</h3>
+        <p>Hello! I am Sa young Shin, currently enrolled as a 4th year student majoring Interactive Arts
+          and Technology in Simon Fraser University. As a visionary student with a passion to jump into
+          the UX/UI industry, I am laying out the foundation for my future career throughout the academic
+          journey by crafting websites/applications by interface design, deep-deriven user researches,wireframing
+          and prototyping. To walk on the path of endless possibilities, I am approaching either collaborative or
+          individual projects with dedication and creativity, contributing my skills on Adobe, Figma, HTML,
+          CSS and more industry standard design tools.</p>
+
+        <h3>Typography</h3>
+        <h4>JetBrains Mono</h4>
+        <p>JetBrains Mono is a monospaced typeface created exclusively for coders. JetBrains, the firm behind
+           prominent IDEs such as IntelliJ IDEA, PyCharm, and PhpStorm, built it. The font is intended to improve
+           the coding experience by ensuring excellent readability, particularly during long coding sessions.</p>
+        <p>#Professionalism #Modern and Sleek #Comfortable Reading Experience #Clarity</p>
+
+        <h1>JETBRAINS MONO - MONO SPACE - FONT WEIGHT 400</h1>
+
+        <h3>Color Palette</h3>
+        <h4>Blue Color Palette</h4>
+        <p>Blue color schemes convey tranquility, trust, and professionalism. Lighter tints, such as sky blue,
+           signify tranquility, but darker tones, such as navy, imply stability and power. It also represents
+           dependability and security, which is why it is often used in corporate logos and technologies.
+           In contrast, darker or desaturated blues can evoke feelings of sadness or melancholy, particularly
+           in art and literature. Blue is also connected with cooling and refreshment, and is frequently used in
+           the branding of water-related items.</p>
+
+        <div class="color-container">
+          <div class="Pattens Blue"> <h4>Pattens Blue <span class='smaller'>#DFE3E6</span></h4></div>
+          <div class="Mangolia"> <h4>Mangolia <span class='smaller'>#F2F1F6 </span></h4></div>
+          <div class="Zumthor"> <h4>Zumthor <span class='smaller'>#C0D9DC</span></h4></div>
+          <div class="Silicon Sliver"> <h4>Silicon Sliver <span class='smaller'>#DAE6ED </span></h4></div>
+          <div class="Link Water"> <h4>Link Water <span class='smaller'>#C4D1D6</span></h4></div>
+        </div>
+
+
+        <h3>Logo</h3>
+        <h4>Logo containing the initial of my full name</h4>
+
+          <div class="logo-container">
+            <div> <img src="img/logo1.png" alt="logo1"></div>
+            <div> <img src="img/logo2.png" alt="logo2"></div>
+          </div>
+
+
+      </section>
+
+
+    </section>
+    <!-- // ETHOS ELEMENT SECTION -->
 
 
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
 
-      <!-- Default Button styling section -->
       <section>
 
         <h2>Navigation Button</h2>
@@ -42,23 +112,61 @@
         <p>.button-nav</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button"&gt;View Project&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
-        <a class="button" href="#">Default Button</a>
+        <a class="button" href="#">View Project</a>
 
       </section>
 
       <section>
         <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>a</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#"&gt;View all Projects&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a href="#">View all Projects</a>
+
       </section>
 
       <section>
-        <h2>Submit/Reset Buttons</h2>
+        <h2>Logo as Link</h2>
+        <h3>CSS selector:</h3>
+        <p>a</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="portfolio_styleguide.html"&gt;&lt;img class="logo" src="img/logo1.png" alt="Logo link"&gt;&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a href="portfolio_styleguide.html"><img class="logo" src="img/logo1.png" alt="Logo link"></a>
+
       </section>
 
       <section>
-        <h2>Text Input Field</h2>
+        <h2>Links for Contact</h2>
+        <h3>CSS selector:</h3>
+        <p>a</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div class="contact-links">
+            &lt;a class="contact-navBar" href="https://www.facebook.com/"&gt;&lt;img class="icon" src="img/facebook.png" alt="facebook"&gt;&lt;/a&gt;
+            &lt;a class="contact-navBar" href="https://www.instagram.com/"&gt;&lt;img class="icon" src="img/instagram.png" alt="instagram"&gt;&lt;/a&gt;
+            &lt;a class="contact-navBar" href="https://gmail.com/"&gt;&lt;img class="icon" src="img/gmail.png" alt="email"&gt;&lt;a&gt;
+          &lt;/div>
+        </code>
+
+        <h3>Rendered element:</h3>
+        <div class="contact-links">
+          <a class="contact-navBar" href="https://www.facebook.com/"><img class="icon" src="img/facebook.png" alt="facebook"></a>
+          <a class="contact-navBar" href="https://www.instagram.com/"><img class="icon" src="img/instagram.png" alt="instagram"></a>
+          <a class="contact-navBar" href="https://gmail.com/"><img class="icon" src="img/gmail.png" alt="email"></a>
+        </div>
+
       </section>
 
     </section>
@@ -71,18 +179,247 @@
 
       <section>
         <h2>Headings</h2>
+        <h3>CSS selector:</h3>
+        <p>h1, h2, h3, h4</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;h1&gt;Heading 1&lt;/h1&gt;
+          &lt;h2&gt;Heading 2&lt;/h2&gt;
+          &lt;h3&gt;Heading 3&lt;/h3&gt;
+          &lt;h4&gt;Heading 4&lt;/h4&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+
       </section>
 
       <section>
         <h2>Paragraphs</h2>
+        <h3>Process Analysis</h3>
+
+        <h3>CSS selector:</h3>
+        <p>p</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;p&gt;&lt;strong&gt;#1 project: MODU company website&lt;/strong&gt;&lt;/p&gt;
+
+          &lt;p&gt;This project was created through the course IAT 339 Web design and Development.
+            The project undertaken for the course IAT 339 Web Design and Development involved
+            the creation of a website for MODU, a company specializing in modular furniture.&lt;/p&gt;
+
+          &lt;p&gt;The aim was to design a fully responsive website with real content, optimized for
+            viewing on all devices. This included structured pages for about, contact, product
+            listing, product detailed pages, blog, and an entire process for purchasing a product,
+            along with appropriate means for users to provide feedback.&lt;/p&gt;
+
+          &lt;p&gt;The team consisted of myself and one other teammate, Jalene Pang.
+            My role encompassed various aspects, including coding, design (UI),
+            content (UX), and user testing. The process began with analyzing
+            the project's requirements and identifying potential problems.&lt;/p&gt;
+
+          &lt;p&gt;One of the challenges encountered was with the blog page, which needed to engage users and set
+            the website apart from others in the industry. Through research and user testing, we discovered
+            that integrating a blog into the website could enhance user engagement and community involvement,
+            thereby increasing the likelihood of product purchases.&lt;/p&gt;
+
+          &lt;p&gt;Another challenge was encountered with the product detail page, which initially had a confusing layout.
+            After receiving feedback from user testing, we made revisions to improve usability and clarity,
+            ultimately creating a layout that effectively showcased the product details.&lt;/p&gt;
+
+          &lt;p&gt;The significance of this project lies in its ability to create a user-friendly website that aligns with
+            user expectations and enhances the overall user experience. By addressing challenges and continuously
+            iterating on the design, we were able to deliver a high-quality website that reflects MODU's brand
+            identity effectively.&lt;/p&gt;
+
+          &lt;p>&lt;strong&gt;#2 project: Eco Guardian Application User interface&lt;/strong&gt;&lt;/p&gt;
+
+          &lt;p&gt;The project undertaken for the course IAT 334 Interface Design involved the creation of an application
+            interface for Eco Guardians, an app targeted at helping people prevent wildfires. The context of the
+            project was to design a user-friendly interface for a scanning/camera-based app that allows users to
+            assess their surroundings for potential fire risks.&lt;/p&gt;
+
+          &lt;p&gt;The team consisted of myself and two other teammates, Dana Alhabbash and Tiffany Jiazhen Wu.
+            My role encompassed UI design, interaction design, prototyping, and research.&lt;/p&gt;
+
+          &lt;p&gt;One challenge we encountered was specifying the need for the application. Initially, there was limited
+           risk associated with campfires evolving into forest fires, prompting us to research and adjust
+           the scope of the app. We refined the app to categorize fire levels through scanning,enabling users to
+           identify various fire risks.&lt;/p&gt;
+
+          &lt;p&gt;Another challenge was with the camera function, which initially seemed limiting. Through research and analysis of
+           other applications, we adapted the scanning feature to complement the camera function, giving users the option
+           to choose both.&lt;/p&gt;
+
+          &lt;p&gt;The significance of this project lies in providing campers and hikers with an offline/online resource for quick
+           personal analysis of fire risks. By enhancing user flow and providing easy access to fire risk assessments,
+           users can now identify the level of risk in their surroundings and take appropriate precautions.&lt;/p&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <p><strong>#1 project: MODU company website</strong></p>
+
+        <p>This project was created through the course IAT 339 Web design and Development.
+          The project undertaken for the course IAT 339 Web Design and Development involved
+          the creation of a website for MODU, a company specializing in modular furniture.</p>
+
+        <p>The aim was to design a fully responsive website with real content, optimized for
+          viewing on all devices. This included structured pages for about, contact, product
+          listing, product detailed pages, blog, and an entire process for purchasing a product,
+          along with appropriate means for users to provide feedback.</p>
+
+        <p>The team consisted of myself and one other teammate, Jalene Pang.
+           My role encompassed various aspects, including coding, design (UI),
+           content (UX), and user testing. The process began with analyzing
+           the project's requirements and identifying potential problems.</p>
+
+        <p>One of the challenges encountered was with the blog page, which needed to engage users and set
+           the website apart from others in the industry. Through research and user testing, we discovered
+           that integrating a blog into the website could enhance user engagement and community involvement,
+           thereby increasing the likelihood of product purchases.</p>
+
+        <p>Another challenge was encountered with the product detail page, which initially had a confusing layout.
+          After receiving feedback from user testing, we made revisions to improve usability and clarity,
+          ultimately creating a layout that effectively showcased the product details.</p>
+
+        <p>The significance of this project lies in its ability to create a user-friendly website that aligns with
+           user expectations and enhances the overall user experience. By addressing challenges and continuously
+           iterating on the design, we were able to deliver a high-quality website that reflects MODU's brand
+           identity effectively.</p>
+
+        <p><strong>#2 project: Eco Guardian Application User interface</strong></p>
+
+        <p>The project undertaken for the course IAT 334 Interface Design involved the creation of an application
+           interface for Eco Guardians, an app targeted at helping people prevent wildfires. The context of the
+           project was to design a user-friendly interface for a scanning/camera-based app that allows users to
+           assess their surroundings for potential fire risks.</p>
+
+        <p>The team consisted of myself and two other teammates, Dana Alhabbash and Tiffany Jiazhen Wu.
+          My role encompassed UI design, interaction design, prototyping, and research.</p>
+
+        <p>One challenge we encountered was specifying the need for the application. Initially, there was limited
+           risk associated with campfires evolving into forest fires, prompting us to research and adjust
+           the scope of the app. We refined the app to categorize fire levels through scanning,enabling users to
+           identify various fire risks.</p>
+
+        <p>Another challenge was with the camera function, which initially seemed limiting. Through research and analysis of
+           other applications, we adapted the scanning feature to complement the camera function, giving users the option
+           to choose both.</p>
+
+        <p>The significance of this project lies in providing campers and hikers with an offline/online resource for quick
+           personal analysis of fire risks. By enhancing user flow and providing easy access to fire risk assessments,
+           users can now identify the level of risk in their surroundings and take appropriate precautions.</p>
+
+
+
       </section>
 
       <section>
         <h2>Bulleted Lists</h2>
+        <h3>CSS selector:</h3>
+        <p>ul, li</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;h3&gt;Interests:&lt;/h3&gt;
+          &lt;ul&gt;
+            &lt;li&gt;I like to learn about the latest design trends and technologies.&lt;/li&gt;
+            &lt;li&gt;I am also willing to learn and adapt to new challenges and technologies.&lt;/li&gt;
+            &lt;li&gt;Outside of work, I am mostly interested  in animal rescue. If possible,
+                I am looking forward to working on a related project.&lt;/li&gt;
+          &lt;/ul&gt;
+
+          &lt;h3&gt;Skills:&lt;/h3&gt;
+          &lt;ul&gt;
+            &lt;li&gt;Bilingual, fluent in English and Korean&lt;/li&gt;
+            &lt;li&gt;Currently pursuing a degree in Interactive Arts and Design&lt;/li&gt;
+            &lt;li&gt;Experienced with user research, wireframing, prototyping, and usability testing&lt;/li&gt;
+            &lt;li&gt;Experienced in Adobe Creative Suite, Sketch, Figma,Protopie and other industry-standard design tools&lt;/li&gt;
+          &lt;/ul&gt;
+        </code>
+
+
+        <h3>Rendered element:</h3>
+
+        <h3>Interests:</h3>
+        <ul>
+          <li>I like to learn about the latest design trends and technologies.</li>
+          <li>I am also willing to learn and adapt to new challenges and technologies.</li>
+          <li>Outside of work, I am mostly interested  in animal rescue. If possible,
+              I am looking forward to working on a related project.</li>
+        </ul>
+
+        <h3>Skills:</h3>
+        <ul>
+          <li>Bilingual, fluent in English and Korean</li>
+          <li>Currently pursuing a degree in Interactive Arts and Design</li>
+          <li>Experienced with user research, wireframing, prototyping, and usability testing</li>
+          <li>Experienced in Adobe Creative Suite, Sketch, Figma,Protopie and other industry-standard design tools</li>
+        </ul>
+
       </section>
 
       <section>
         <h2>Numbered Lists</h2>
+        <h3>Analysis Phase</h3>
+
+        <h3>CSS selector:</h3>
+        <p>ol, li, a</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;h3&gt;#1 Analysis Phase:&lt;/h3&gt;
+          &lt;ol&gt;
+          &lt;li&gt;&lt;a&gt;Creation of the brand identity and color scheme&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Planning the overall layout and pages of the website&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Researching the content to be included on the website&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Designing the pages while considering user flow&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Obtaining feedback from users and teaching teams&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Making necessary adjustments based on feedback&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Finalizing the website and ensuring optimization for all devices&lt;/a&gt;&lt;/li&gt;
+          &lt;/ol&gt;
+
+          &lt;h3&gt;#2 Analysis Phase:&lt;/h3&gt;
+          &lt;ol&gt;
+          &lt;li&gt;&lt;a&gt;Domain user research and choosing the intention of the app&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Creating the application name&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Creating features and interaction framework&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Designing the UI and the user interaction through the app&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Creating an interactive prototype&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;User pilot testings and feedback refinements&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Redesigning the app as a final touch&lt;/a&gt;&lt;/li&gt;
+          &lt;/ol&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+
+        <h3>#1 Analysis Phase:</h3>
+        <ol>
+        <li><a>Creation of the brand identity and color scheme</a></li>
+        <li><a>Planning the overall layout and pages of the website</a></li>
+        <li><a>Researching the content to be included on the website</a></li>
+        <li><a>Designing the pages while considering user flow</a></li>
+        <li><a>Obtaining feedback from users and teaching teams</a></li>
+        <li><a>Making necessary adjustments based on feedback</a></li>
+        <li><a>Finalizing the website and ensuring optimization for all devices</a></li>
+        </ol>
+
+        <h3>#2 Analysis Phase:</h3>
+        <ol>
+        <li><a>Domain user research and choosing the intention of the app</a></li>
+        <li><a>Creating the application name</a></li>
+        <li><a>Creating features and interaction framework</a></li>
+        <li><a>Designing the UI and the user interaction through the app</a></li>
+        <li><a>Creating an interactive prototype</a></li>
+        <li><a>User pilot testings and feedback refinements</a></li>
+        <li><a>Redesigning the app as a final touch</a></li>
+        </ol>
+
       </section>
 
     </section>
@@ -95,15 +432,86 @@
 
       <section>
         <h2>Main Navigation</h2>
+        <h3>CSS selector:</h3>
+        <p>a, navBar</p>
+
+        <h3>Sample Code:</h3>
+        <code>
+          &lt;div class="navBar"&gt;
+          &lt;a class="navBar" href="portfolio_styleguide.html"&gt;Home&lt;/a&gt;
+          &lt;a class="navBar" href="portfolio_styleguide.html"&gt;Projects&lt;/a&gt;
+          &lt;a class="navBar" href="portfolio_styleguide.html"&gt;About&lt;/a&gt;
+          &lt;/div&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <div class="navBar">
+          <a class="navBar" href="portfolio_styleguide.html">Home</a>
+          <a class="navBar" href="portfolio_styleguide.html">Projects</a>
+          <a class="navBar" href="portfolio_styleguide.html">About</a>
+        </div>
+
       </section>
 
-      <section>
-        <h2>Product Listing</h2>
-      </section>
+
 
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
+
+    <!-- IMAGE ELEMENTS SECTION // -->
+    <section id="image_elements">
+
+      <section>
+        <h2>Artifacts</h2>
+        <h3>Project 1 Artifacts</h3>
+
+        <div class="project1-image-container">
+          <div> <img src="img/eco1.png" alt="eco1"></div>
+          <div> <img src="img/eco2.png" alt="eco2"></div>
+          <div> <img src="img/eco3.png" alt="eco3"></div>
+        </div>
+
+        <h3>Project 2 Artifacts</h3>
+
+        <div class="project2-image-container">
+          <div> <img src="img/modu1.png" alt="modu1"></div>
+          <div> <img src="img/modu2.png" alt="modu2"></div>
+          <div> <img src="img/modu3.png" alt="modu3"></div>
+          <div> <img src="img/modu4.png" alt="modu4"></div>
+          <div> <img src="img/modu5.png" alt="modu5"></div>
+          <div> <img src="img/modu6.png" alt="modu6"></div>
+          <div> <img src="img/modu7.png" alt="modu7"></div>
+          <div> <img src="img/modu8.png" alt="modu8"></div>
+          <div> <img src="img/modu9.png" alt="modu9"></div>
+        </div>
+
+
+      </section>
+
+
+
+    </section>
+    <!-- // IMAGE ELEMENTS SECTION -->
+
+
+    <!-- CITATIONS SECTION // -->
+    <section id="citation_elements">
+
+      <section>
+        <h2>Citations</h2>
+
+          <ul>
+            <li>https://www.w3schools.com/css/css_font_google.asp</li>
+            <li>https://www.pinterest.com/pin/3659243438983774/</li>
+          </ul>
+
+      </section>
+
+
+
+    </section>
+    <!-- // CITATIONS SECTION -->
 
   </body>
 </html>

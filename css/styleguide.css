@@ -1,0 +1,146 @@
+/*
+  STYLE GUIDE STYLING FOR PORTFOLIO
+*/
+
+/* Font family: JetBrains Mono */
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
+}
+
+body {
+    background-color: #F2F1F6;
+}
+
+h1{
+  font-size: 2em;
+}
+
+/*section*/
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+}
+section{
+  background-color: #DAE6ED;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+}
+section h3 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+.color-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-container div {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.Pattens.Blue {
+  background-color: #DFE3E6;
+}
+
+.Mangolia {
+  background-color: #F2F1F6;
+}
+
+.Zumthor {
+  background-color: #C0D9DC;
+}
+
+.Silicon.Sliver {
+  background-color: #DAE6ED;
+}
+
+.Link.Water {
+  background-color: #C4D1D6;
+}
+
+.logo-container img {
+  width: 200px;
+  height: auto;
+}
+
+.contact-links .icon {
+  width: 50px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.project1-image-container img,
+.project2-image-container img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #333;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #999;
+}
+
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+.navBar a{
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  margin-right: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.navBar {
+  padding: 10px;
+}
