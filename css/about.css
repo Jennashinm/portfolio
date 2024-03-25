@@ -1,5 +1,5 @@
 /*
-  STYLE GUIDE STYLING FOR PORTFOLIO
+PORTFOLIO
 */
 
 /* Font family: JetBrains Mono */
@@ -17,13 +17,30 @@ h1{
   font-size: 2em;
 }
 
+.banner {
+    background-color: #C4D1D6;
+    padding: 20px;
+    text-align:left;
+    margin-top: 3rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 35rem;
+    width: 200px;
+    height: 200px;
+}
+
+.image-container img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
 /*section*/
 
-section:not([id]) {
-  margin: 1em 0;
-  padding: 0.5em 0;
-  border-top: 1px solid #333;
-}
+
 section{
   background-color: #DAE6ED;
   margin-bottom: 3rem;
@@ -105,18 +122,19 @@ section code {
 */
 
 /* Styling for the navigation button */
-.button {
-  background-color: #C0D9DC;
-  color: #ffffff;
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.5s ease;
+.button-nav {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #333;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 
-.button:hover {
-    background-color: #98B5B8;
+.button-nav:hover, .button-nav:focus {
+  background-color: #999;
 }
 
 
@@ -125,7 +143,11 @@ section code {
   TEXT ELEMENTS -------------------
 */
 
-
+footer {
+    background-color: #C4D1D6;
+    padding: 20px;
+    text-align: center;
+}
 
 
 /*
@@ -146,4 +168,6 @@ section code {
 
 .navBar {
   padding: 10px;
+  position: relative;
+  left: 32rem;
 }

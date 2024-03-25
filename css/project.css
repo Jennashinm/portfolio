@@ -1,5 +1,5 @@
 /*
-  STYLE GUIDE STYLING FOR PORTFOLIO
+PORTFOLIO
 */
 
 /* Font family: JetBrains Mono */
@@ -17,13 +17,17 @@ h1{
   font-size: 2em;
 }
 
+.banner {
+    background-color: #C4D1D6;
+    padding: 20px;
+    text-align:left;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
 /*section*/
 
-section:not([id]) {
-  margin: 1em 0;
-  padding: 0.5em 0;
-  border-top: 1px solid #333;
-}
+
 section{
   background-color: #DAE6ED;
   margin-bottom: 3rem;
@@ -96,6 +100,37 @@ section code {
   margin-bottom: 2rem;
 }
 
+.main-project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main-project div {
+    display: flex;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.main-project img {
+    width: 400px;
+    height: auto;
+    margin-right: 10rem;
+    margin-bottom: 4rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
 
 
 
@@ -125,8 +160,11 @@ section code {
   TEXT ELEMENTS -------------------
 */
 
-
-
+footer {
+    background-color: #C4D1D6;
+    padding: 20px;
+    text-align: center;
+}
 
 /*
   COMBINED ELEMENTS -------------------
@@ -146,4 +184,6 @@ section code {
 
 .navBar {
   padding: 10px;
+  position: relative;
+  left: 32rem;
 }
