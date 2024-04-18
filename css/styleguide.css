@@ -5,13 +5,13 @@
 /* Font family: JetBrains Mono */
 
 body {
-  font-family: "JetBrains Mono", monospace;
-  font-weight: 400;
+    background-color: #f9f9f9;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    background-color: #F2F1F6;
-}
 
 h1{
   font-size: 2em;
@@ -99,7 +99,6 @@ section code {
 
 
 
-
 /*
   INTERACTIVE ELEMENTS -------------------
 */
@@ -116,34 +115,103 @@ section code {
 }
 
 .button:hover {
-    background-color: #98B5B8;
+    background-color: #0056b3;
+}
+
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+
+.dropbtn {
+    background-color: transparent;
+    color: #333;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 7px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px;
+}
+
+
+.dropbtn:hover {
+    background-color: #C0D9DC;
+    color: #fff;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 7px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 7px;
+    display: block;
+    border-bottom: 1px solid #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
 
-/*
-  TEXT ELEMENTS -------------------
-*/
-
-
-
-
-/*
-  COMBINED ELEMENTS -------------------
-*/
-.navBar a{
-  text-decoration: none;
-  color: #333;
-  padding: 10px 20px;
-  margin-right: 2rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.container {
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.navBar a:hover {
-  color: #C0D9DC;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 2px solid black;
 }
 
 .navBar {
-  padding: 10px;
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.navBar a:hover, .navBar a:focus {
+    color: #333;
+    background-color: #C0D9DC;
+    transition: background-color 0.7s ease;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 7px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
 }
